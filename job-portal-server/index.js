@@ -7,8 +7,6 @@ require('dotenv').config()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://lakshay22dhoundiyal:u97klyTxI0FAnbnn@job-portal.7ieojkl.mongodb.net/?retryWrites=true&w=majority&appName=job-portal')
-
 app.get('/', (req, res) => {
   res.send('Hello Developer')
 })
