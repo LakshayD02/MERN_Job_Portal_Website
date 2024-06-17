@@ -5,13 +5,7 @@ const port = process.env.PORT || 3000;
 require('dotenv').config()
 // Middleware
 app.use(express.json())
-app.use(cors(
-  {
-    origin: ["https://job-portal-lakshay.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+app.use(cors())
 
 mongoose.connect('mongodb+srv://lakshay22dhoundiyal:u97klyTxI0FAnbnn@job-portal.7ieojkl.mongodb.net/?retryWrites=true&w=majority&appName=job-portal')
 
