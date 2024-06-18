@@ -58,8 +58,8 @@ const Navbar = () => {
 
             {/* SIGNUP AND LOGIN BUTTON */}
             <div className="text-base text-primary font-medium space-x-5 hidden lg:block">
-                <Link to = "https://mern-job-portal-website.vercel.app/login" className='py-2 px-5 border rounded'>Login</Link>
-                <Link to = "https://mern-job-portal-website.vercel.app/sign-up" className='py-2 px-5 border rounded bg-blue text-white'>Sign up</Link>
+                <Link to = "/login" className='py-2 px-5 border rounded'>Login</Link>
+                <Link to = "/sign-up" className='py-2 px-5 border rounded bg-blue text-white'>Sign up</Link>
                 {/* <Link to = "/LogoutButton" className='py-2 px-5 border rounded bg-blue text-white'>Logout</Link> */}
             </div>
 
