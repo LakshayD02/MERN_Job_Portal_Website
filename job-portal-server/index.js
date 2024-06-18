@@ -5,7 +5,12 @@ const port = process.env.PORT || 3000;
 require('dotenv').config()
 // Middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors( {
+origin: ["https://https://mern-job-portal-website.vercel.app/"],
+  methods: ["POST", "GET"],
+  credentials: true
+}
+));
 
 app.get('/', (req, res) => {
   res.send('Hello Developer')
