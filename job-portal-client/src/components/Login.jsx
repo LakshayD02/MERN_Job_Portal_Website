@@ -21,7 +21,7 @@ const Login = () => {
       const userName = user.displayName || user.email.split('@')[0]; // Use display name if available, fallback to email before "@"
 
       setUser(user); // Update user state
-      navigate('/', { replace: true }); // Redirect to home page after login
+      navigate('https://mern-job-portal-lakshay.vercel.app/', { replace: true }); // Redirect to home page after login
 
       Swal.fire({
         icon: 'success',
