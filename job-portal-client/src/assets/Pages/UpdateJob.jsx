@@ -19,7 +19,7 @@ const UpdateJob = () => {
       const onSubmit = (data) => {
         data.skills = selectedOption;
         // console.log(data);
-        fetch(`http://localhost:3000/update-job/${id}`, {
+        fetch(`https://mern-job-portal-website.vercel.app/update-job/${id}`, {
           method: "PATCH",
           headers: {'content-type': 'application/json'},
           body: JSON.stringify(data)
@@ -31,7 +31,7 @@ const UpdateJob = () => {
             alert("Job Updated Successfully");
           }
           reset()
-          window.location.href = 'http://localhost:5173/my-job';
+          window.location.href = 'https://mern-job-portal-lakshay.vercel.app/my-job';
         });
         };
 
