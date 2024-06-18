@@ -12,7 +12,7 @@ const itemsPerPage = 4;
 
     useEffect(() => {
         setIsLoading(true)
-        fetch(`http://localhost:3000/myJobs/lakshay22dhoundiyal@gmail.com`).then(res => res.json()).then(data => {
+        fetch(`https://mern-job-portal-website.vercel.app/myJobs/lakshay22dhoundiyal@gmail.com`).then(res => res.json()).then(data => {
           setJobs(data);
           setIsLoading(false);
         });
