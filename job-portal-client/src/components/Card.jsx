@@ -8,7 +8,7 @@ const {_id, companyName, jobTitle, companyLogo, minPrice, maxPrice, salaryType, 
   return (
    
   <section className="card">
-    <Link to={`/job/${_id}`} className='flex gap-4 flex-col sm:flex-row items-start'>
+    <Link to={`https://mern-job-portal-website.vercel.app/job/${_id}`} className='flex gap-4 flex-col sm:flex-row items-start'>
     <img src={companyLogo} alt="" />
     <div className="">
       <h4 className="text-primary mb-1">{companyName}</h4>
