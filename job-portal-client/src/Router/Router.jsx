@@ -15,27 +15,27 @@ const router = createBrowserRouter([
       path: "/",
       element: <App/>,
       children: [
-        {path: "/", element: <Home/>},
+        {path: "https://mern-job-portal-website.vercel.app/", element: <Home/>},
         {
-          path: "/post-job",
+          path: "https://mern-job-portal-website.vercel.app/post-job",
           element: <CreateJob/>
         },
         
         {
-          path: "/my-job",
+          path: "https://mern-job-portal-website.vercel.app/my-job",
           element: <MyJobs/>
         },
         {
-          path: "/salary",
+          path: "https://mern-job-portal-website.vercel.app/salary",
           element: <SalaryPage/>
         },
         {
-          path: "edit-job/:id",
+          path: "https://mern-job-portal-website.vercel.app/edit-job/:id",
           element: <UpdateJob/>,
           loader: ({params}) => fetch(`http://localhost:3000/all-jobs/${params.id}`)
         },
         {
-          path: "/job/:id",
+          path: "https://mern-job-portal-website.vercel.app/job/:id",
           element: <JobDetails/>
         }
 
@@ -43,11 +43,11 @@ const router = createBrowserRouter([
     },
 
     {
-      path: "/login",
+      path: "https://mern-job-portal-website.vercel.app/login",
       element: <Login/>
     },
     {
-      path: "/sign-up",
+      path: "https://mern-job-portal-website.vercel.app/sign-up",
       element: <Signup/>
     }
 
