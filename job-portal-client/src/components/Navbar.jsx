@@ -12,10 +12,10 @@ const Navbar = () => {
     }
 
     const navItems = [
-        {path: "https://mern-job-portal-website.vercel.app/", title: "Start a Search"},
-        {path: "https://mern-job-portal-website.vercel.app/my-job", title: "My Jobs"},
-        {path: "https://mern-job-portal-website.vercel.app/salary", title: "Salary Estimate"},
-        {path: "https://mern-job-portal-website.vercel.app/post-job", title: "Post a Job"},
+        {path: "/", title: "Start a Search"},
+        {path: "/my-job", title: "My Jobs"},
+        {path: "/salary", title: "Salary Estimate"},
+        {path: "/post-job", title: "Post a Job"},
     ]
   return (
     <header className='max-w-screen container mx-auto xl:px-24 px-4'>
@@ -88,8 +88,8 @@ const Navbar = () => {
                     ))
                 }
 
-<li className="text-white py-1"><Link to = "https://mern-job-portal-website.vercel.app/login">Login</Link></li>
-<li className="text-white py-1"><Link to = "https://mern-job-portal-website.vercel.app/login">Logout</Link></li>
+<li className="text-white py-1"><Link to = "/login">Login</Link></li>
+<li className="text-white py-1"><Link to = "/login">Logout</Link></li>
             </ul>
         </div>
     </header>
